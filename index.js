@@ -138,7 +138,7 @@ function hungryDog(weight, age){
     }
 }
 
-
+console.log(hungryDog(15,1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -211,7 +211,7 @@ Using the feet function below do the following:
 */
 
 function feet(cms){
-  return cms * 0.0328084;
+  return cms / 30.48;
 }
 
 console.log(feet(100));
@@ -279,10 +279,25 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(word) {
+  let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+  
+  let vowelCount = 0
+
+  for(let vowel of word) {
+    if(vowels.includes(vowel)) {
+      vowelCount++
+    }
+  }
+
+  return vowelCount;
+
+  
 }
 
+console.log(vowelCounter('i LOve YoU'));
+console.log(vowelCounter('ElEphant'));
+console.log(vowelCounter('The Wonderful Wizard Of Oz'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
